@@ -1,15 +1,15 @@
 
 const menuItems = [{
     name: "Vada",
-    image: ""
+    image: "vada cha ima"
 },
 {
     name: "Panner Handi",
-    image: ""
+    image: "fefsfe"
 },
 {
     name: "Gulab Jamun",
-    image: ""
+    image: "adfe"
 }];
 
 
@@ -30,10 +30,20 @@ const menuhead = () => {
 const foodList = () => {
 
     menuItems.forEach((item) => {
+        const itemBox = document.createElement("div");
+        const foodImage = document.createElement("div");
+        foodImage.innerHTML = item.image;
 
-        
-        
+        const foodname = document.createElement("div");
+        foodname.innerHTML = item.name;
+
+        itemBox.appendChild(foodImage);
+        itemBox.appendChild(foodname);
+
+        content.appendChild(itemBox);
     });    
+
+    
 };
 
-export {menuhead};
+export {menuhead, foodList};
