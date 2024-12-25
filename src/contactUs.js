@@ -18,4 +18,57 @@ const contactAddress = () => {
 
 }
 
-export {contactAddress};
+const contactForm = () => {
+
+    const contactTitle = document.createElement("div");
+    contactTitle.innerHTML = "Contact Form";
+
+    const submitButton = document.createElement("button");
+    submitButton.innerHTML = "Submit";
+    submitButton.className = "submitButton";
+
+    const firstName = document.createElement("input");
+    firstName.className = "firstName";
+    firstName.value = "First Name";
+
+    const lastName = document.createElement("input");
+    lastName.className = "lastName";
+    lastName.value = "Last Name";
+
+    const phoneNo = document.createElement("input");
+    phoneNo.className = "phoneNo";
+    phoneNo.value = "9999 999 999";
+
+    const email = document.createElement("input");
+    email.className = "email";
+    email.value = "@gmail.com";
+
+    const description = document.createElement("input");
+    description.className = "description";
+    description.value = ".....";
+
+
+    const contactTitleSubmit = document.createElement("div");
+    contactTitleSubmit.appendChild(contactTitle);
+    contactTitleSubmit.appendChild(submitButton);
+
+    const formInputs = document.createElement("div");
+    formInputs.appendChild(firstName);
+    formInputs.appendChild(lastName);
+    formInputs.appendChild(phoneNo);
+    formInputs.appendChild(email);
+    formInputs.appendChild(description);
+    
+    content.appendChild(contactTitleSubmit);
+    content.appendChild(formInputs);
+}
+
+
+const addressMap = () => {
+
+    const map = document.createElement("div");
+    map.className = "map";
+
+    content.appendChild(map);
+};
+export {contactAddress, contactForm, addressMap};
