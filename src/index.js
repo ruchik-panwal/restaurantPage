@@ -4,7 +4,7 @@
 
 import "./styles.css";
 import pageLoad from "./homepage.js";
-import { menuhead } from "./menu.js";
+import { menuhead, foodList } from "./menu.js";
 
 
 console.log("hello there");
@@ -13,3 +13,4 @@ console.log("hello there");
 
 // pageLoad();
 // menuhead();
+// foodList();
