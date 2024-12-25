@@ -1,16 +1,16 @@
 
-// menuItems = [{
-//     name: "Vada",
-//     image: ""
-// },
-// {
-//     name: "Panner Handi",
-//     image: ""
-// },
-// {
-//     name: "Gulab Jamun",
-//     image: ""
-// }];
+const menuItems = [{
+    name: "Vada",
+    image: ""
+},
+{
+    name: "Panner Handi",
+    image: ""
+},
+{
+    name: "Gulab Jamun",
+    image: ""
+}];
 
 
 const menuhead = () => {
