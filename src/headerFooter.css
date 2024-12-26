@@ -55,3 +55,10 @@ body{
 .credit{
     position: absolute;
 }
+
+#content{
+    background-image: url("Images/HomePage.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh; 
+}
