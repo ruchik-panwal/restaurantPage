@@ -4,6 +4,7 @@ const pageLoad = () => {
     const description = document.createElement("div");
     description.innerHTML = "Food that Makes you go Crasy";
 
+    
     content.appendChild(description);
 };
 

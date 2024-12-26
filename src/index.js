@@ -12,7 +12,7 @@ console.log("hello there");
 
 
 
-// pageLoad();
+pageLoad();
 // menuhead();
 // foodList();
 // contactAddress();
