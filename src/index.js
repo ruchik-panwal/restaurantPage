@@ -12,9 +12,9 @@ console.log("hello there");
 
 
 
-pageLoad();
-// menuhead();
-// foodList();
+// pageLoad();
+menuhead();
+foodList();
 // contactAddress();
 // contactForm();
 // addressMap();
