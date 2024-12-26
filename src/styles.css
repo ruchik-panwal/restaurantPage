@@ -1,4 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Yatra+One&display=swap');
+
+
 body{
   margin: 0;
   padding: 0;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-family: "Alex Brush";
+  font-size: 6rem;
+  margin: 20px;
+}
+
+.menuGrid{
+
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 50px;
+
+}
+
+.itemBox {
+
+  background-color: darkcyan;
+  height: 100px;
+  width: 200px;
+
+  justify-self: center;
+  align-self: center;
 }
