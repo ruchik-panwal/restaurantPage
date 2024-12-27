@@ -36,3 +36,8 @@ body{
   justify-self: center;
   align-self: center;
 }
+
+.foodImage{
+  height: 100px;
+  width: 100px;
+}

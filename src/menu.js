@@ -1,7 +1,7 @@
 
 const menuItems = [{
-    name: "Vada",
-    image: "vada cha ima"
+    name: "Butter Chicken",
+    image: "Images/FoodList/Butter Chicken.jpeg"
 },
 {
     name: "Panner Handi",
@@ -35,8 +35,10 @@ const foodList = () => {
     menuItems.forEach((item) => {
         const itemBox = document.createElement("div");
         itemBox.className = "itemBox";
+
         const foodImage = document.createElement("div");
-        foodImage.innerHTML = item.image;
+        foodImage.className = "foodImage";
+        foodImage.style.backgroundImage = 'Images/FoodList/Butter Chicken.jpeg';
 
         const foodname = document.createElement("div");
         foodname.innerHTML = item.name;
