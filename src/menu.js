@@ -51,15 +51,16 @@ const content = document.querySelector("#content");
 
 const menuhead = () => {
 
-   
     const menuTitle = document.createElement("div");
+    const lineDiv = document.createElement("div");
     menuTitle.innerHTML = "Menu";
     menuTitle.className = "title";
+    lineDiv.className = "lineDiv";
 
-    // const line = document.createElement("div");
-    // line.innerHTML = "-------";
-
-    content.appendChild(menuTitle);
+    
+    lineDiv.appendChild(menuTitle);
+    content.appendChild(lineDiv)
+    
 };
 
 const foodList = () => {
