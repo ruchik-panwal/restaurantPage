@@ -58,9 +58,13 @@ const contactForm = () => {
     formInputs.appendChild(phoneNo);
     formInputs.appendChild(email);
     formInputs.appendChild(description);
-    
-    content.appendChild(contactTitleSubmit);
-    content.appendChild(formInputs);
+
+    const contactUsForm = document.createElement("div");
+    contactUsForm.className = "contactUsForm"
+
+    contactUsForm.appendChild(contactTitleSubmit);
+    contactUsForm.appendChild(formInputs);
+    content.appendChild(contactUsForm);
 }
 
 
@@ -71,4 +75,5 @@ const addressMap = () => {
 
     content.appendChild(map);
 };
-export {contactAddress, contactForm, addressMap};
+
+export {contactAddress, addressMap, contactForm};

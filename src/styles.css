@@ -45,7 +45,6 @@ body {
   width: 300px;
   justify-self: center;
   align-self: center;
-
 }
 
 .foodImage {
@@ -62,3 +61,37 @@ body {
   font-family: "Playfair Display";
   font-weight: 400;
 }
+
+/* Contact Us */
+
+
+#content{
+
+  box-sizing: border-box;
+  height: 80vh;
+  gap: 50px;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 400px;
+
+}
+
+
+.addressBox,
+.contactUsForm,
+.map{
+  
+  box-sizing: border-box;
+  background-color: sandybrown;
+  border: #1C1C1C solid;
+  height: 100%;
+  border-radius: 30px;
+  padding: 20px;
+
+}
+
+.map{
+  padding: 0;
+  grid-area: 1 / 2 / 3 / 2;
+} 
