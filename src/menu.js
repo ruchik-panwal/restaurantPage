@@ -1,15 +1,50 @@
 
+import ButterChicken from "./Images/FoodList/ButterChicken.jpeg";
+import ChickenBiryani from "./Images/FoodList/ChickenBiryani.jpeg";
+import CholeBhature from "./Images/FoodList/CholeBhature.jpeg";
+import DahiKeKebab from "./Images/FoodList/DahiKeKebab.jpeg";
+import PaneerTikkaPizza from "./Images/FoodList/PaneerTikkaPizza.jpeg";
+import RajKachori from "./Images/FoodList/RajKachori.jpeg";
+import SpecialThali from "./Images/FoodList/SpecialThali.jpeg";
+import TawaPulao from "./Images/FoodList/TawaPulao.jpeg";
+import TheGrillMill from "./Images/FoodList/TheGrillMill.jpeg";
+
+
 const menuItems = [{
     name: "Butter Chicken",
-    image: "Images/FoodList/Butter Chicken.jpeg"
+    image: ButterChicken
 },
 {
-    name: "Panner Handi",
-    image: "fefsfe"
+    name: "Chicken Biryani",
+    image: ChickenBiryani
 },
 {
-    name: "Gulab Jamun",
-    image: "adfe"
+    name: "Chole Bhature",
+    image: CholeBhature
+},
+{
+    name: "Dahi Ke Kebab",
+    image: DahiKeKebab
+},
+{
+    name: "Panner Tikka Pizza",
+    image: PaneerTikkaPizza
+},
+{
+    name: "Raj Kachori",
+    image: RajKachori
+},
+{
+    name: "Special Thali",
+    image: SpecialThali
+},
+{
+    name: "Tawa Pulao",
+    image: TawaPulao
+},
+{
+    name: "The Grill Mill",
+    image: TheGrillMill
 }];
 
 const content = document.querySelector("#content");
@@ -36,15 +71,15 @@ const foodList = () => {
         const itemBox = document.createElement("div");
         itemBox.className = "itemBox";
 
-        const foodImage = document.createElement("div");
+        const foodImage = document.createElement("img");
         foodImage.className = "foodImage";
-        foodImage.style.backgroundImage = 'Images/FoodList/Butter Chicken.jpeg';
+        foodImage.src = item.image;
 
-        const foodname = document.createElement("div");
-        foodname.innerHTML = item.name;
+        const foodName = document.createElement("div");
+        foodName.innerHTML = item.name;
 
         itemBox.appendChild(foodImage);
-        itemBox.appendChild(foodname);
+        itemBox.appendChild(foodName);
 
         menuGrid.appendChild(itemBox);
     });    
