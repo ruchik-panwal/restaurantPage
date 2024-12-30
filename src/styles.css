@@ -65,7 +65,7 @@ body {
 /* Contact Us */
 
 
-#content{
+#content {
 
   box-sizing: border-box;
   height: 80vh;
@@ -74,24 +74,46 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100px 400px;
+  font-family: "Quicksand";
 
 }
 
 
 .addressBox,
 .contactUsForm,
-.map{
-  
+.map {
+
   box-sizing: border-box;
   background-color: sandybrown;
   border: #1C1C1C solid;
   height: 100%;
   border-radius: 30px;
-  padding: 20px;
+  padding: 40px;
 
 }
 
-.map{
+.map {
   padding: 0;
   grid-area: 1 / 2 / 3 / 2;
-} 
+}
+
+
+/* Address Box */
+
+.addressBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addressTitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.addressBody {
+  font-size: 1.3rem;
+}
+
+/* Contact Form */
+
