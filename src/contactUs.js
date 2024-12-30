@@ -8,9 +8,11 @@ const contactAddress = () => {
 
     const addressTitle  = document.createElement("div");
     addressTitle.innerHTML = "Address";
+    addressTitle.className = "addressTitle";
 
     const addressBody = document.createElement("div");
     addressBody.innerHTML = "225 Park Ave S, New York, NY 10003, USA";
+    addressBody.className = "addressBody";
 
     addressBox.appendChild(addressTitle);
     addressBox.appendChild(addressBody);
@@ -22,6 +24,7 @@ const contactForm = () => {
 
     const contactTitle = document.createElement("div");
     contactTitle.innerHTML = "Contact Form";
+    contactTitle.className = "contactTitle";
 
     const submitButton = document.createElement("button");
     submitButton.innerHTML = "Submit";
@@ -49,10 +52,12 @@ const contactForm = () => {
 
 
     const contactTitleSubmit = document.createElement("div");
+    contactTitleSubmit.className = "contactTitleSubmit";
     contactTitleSubmit.appendChild(contactTitle);
     contactTitleSubmit.appendChild(submitButton);
 
     const formInputs = document.createElement("div");
+    formInputs.className = "formInputs";
     formInputs.appendChild(firstName);
     formInputs.appendChild(lastName);
     formInputs.appendChild(phoneNo);
