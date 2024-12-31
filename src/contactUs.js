@@ -39,23 +39,23 @@ const contactForm = () => {
 
     const firstName = document.createElement("input");
     firstName.className = "firstName";
-    firstName.value = "First Name";
+    firstName.placeholder = "First Name";
 
     const lastName = document.createElement("input");
     lastName.className = "lastName";
-    lastName.value = "Last Name";
+    lastName.placeholder = "Last Name";
 
     const phoneNo = document.createElement("input");
     phoneNo.className = "phoneNo";
-    phoneNo.value = "9999 999 999";
+    phoneNo.placeholder = "9999 999 999";
 
     const email = document.createElement("input");
     email.className = "email";
-    email.value = "@gmail.com";
+    email.placeholder = "@gmail.com";
 
     const description = document.createElement("input");
     description.className = "description";
-    description.value = ".....";
+    description.placeholder = ".....";
 
 
     const contactTitleSubmit = document.createElement("div");
