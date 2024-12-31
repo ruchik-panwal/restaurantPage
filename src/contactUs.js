@@ -1,12 +1,19 @@
-const content = document.querySelector("#content");
+import "../src/cssFiles/contactUs.css"
+
+
+
+
 
 
 const contactAddress = () => {
 
+    const content = document.querySelector("#content");
+    content.className = "contactUsContent";
+
     const addressBox = document.createElement("div");
     addressBox.className = "addressBox";
 
-    const addressTitle  = document.createElement("div");
+    const addressTitle = document.createElement("div");
     addressTitle.innerHTML = "Address";
     addressTitle.className = "addressTitle";
 
@@ -81,4 +88,4 @@ const addressMap = () => {
     content.appendChild(map);
 };
 
-export {contactAddress, addressMap, contactForm};
+export { contactAddress, addressMap, contactForm };

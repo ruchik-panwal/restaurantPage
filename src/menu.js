@@ -47,20 +47,22 @@ const menuItems = [{
     image: TheGrillMill
 }];
 
-const content = document.querySelector("#content");
+
 
 const menuhead = () => {
 
+    const content = document.querySelector("#content");
+    content.className = "menuContent";
     const menuTitle = document.createElement("div");
     const lineDiv = document.createElement("div");
     menuTitle.innerHTML = "Menu";
     menuTitle.className = "title";
     lineDiv.className = "lineDiv";
 
-    
+
     lineDiv.appendChild(menuTitle);
     content.appendChild(lineDiv)
-    
+
 };
 
 const foodList = () => {
@@ -83,11 +85,11 @@ const foodList = () => {
         itemBox.appendChild(foodName);
 
         menuGrid.appendChild(itemBox);
-    });    
+    });
 
     content.appendChild(menuGrid);
 
-    
+
 };
 
-export {menuhead, foodList};
+export { menuhead, foodList };
