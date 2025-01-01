@@ -1,10 +1,5 @@
 import "../src/cssFiles/contactUs.css"
 
-
-
-
-
-
 const contactAddress = () => {
 
     const content = document.querySelector("#content");
